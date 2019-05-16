@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <title>Meme Generator</title>
+</head>
+<body>
+    <h1>MEME GENERATOR</h1>
+    <div class="container" id="parent">
+        <div class="row">
+            <p>Image URL</p>
+            <input type="text" name="URL" id="image-url">
+        </div>
+        <div class="row">
+            <p>Meme on Top</p>
+            <input type="text" name="TMEME" id="top-meme">
+         </div>
+        <div class="row">
+            <p>Meme on Bottom</p>
+            <input type="text" name="BMEME" id="bottom-meme">
+        </div>
+        <div class="row">
+            <button class="generator">GENERATE</button>
+
+        </div>
+        
+
+    </div>
+    <script>
+        var inputField = document.querySelector("#image-url");
+    inputField.addEventListener("keypress", function(event){
+        if(event.keyCode===13){
+            var text = document.querySelector("#image-url").value;
+            
+            var elem = document.createElement('img');
+            elem.id = 'child';
+            elem.setAttribute('src', text);
+            elem.style.color = "red"
+            elem.classList.add("wait")
+            var parent = document.getElementById('parent')
+            parent.appendChild(elem);
+        };
+    })
+    var picture = document.getElementById('child')
+    var gene = document.querySelector(".generator")
+     gene.addEventListener('click', function(){
+       var picture = document.getElementById('child')
+        picture.classList.remove("wait")
+    
+     })
+
+
+    </script>
+<script src="main.js"></script>
+</body>
+</html>
+<!-- https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiH8c7jwZ_iAhUK1qwKHZ3eCF0QjRx6BAgBEAU&url=https%3A%2F%2Fwww.guidedogs.org%2F&psig=AOvVaw06llfynSz-USS0yDLh59DO&ust=1558077671039279 -->
