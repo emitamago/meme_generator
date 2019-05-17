@@ -10,24 +10,33 @@
     <title>Meme Generator</title>
 </head>
 <body>
-    <h1>MEME GENERATOR</h1>
-    <div class="container" id="parent">
+    <h1 class="text-center">MEME GENERATOR</h1>
+    <div class="container col-md-8" id="parent">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Image URL</span>
+            </div>
+            <input type="text" class="form-control" id="image-url" placeholder="Please type image URL" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+        
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Meme on Top</span>
+            </div>
+            <input type="text" class="form-control" id="top-meme" placeholder="Tell me your Meme" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Meme on Bottom</span>
+            </div>
+            <input type="text" class="form-control" id="bottom-meme" placeholder="Tell me your Meme" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
         <div class="row">
-            <p>Image URL</p>
-            <input type="text" name="URL" id="image-url">
+            
+             <button class="btn btn-outline-primary mx-auto" id="generator">Generate!</button> 
         </div>
-        <div class="row">
-            <p>Meme on Top</p>
-            <input type="text" name="TMEME" id="top-meme">
-         </div>
-        <div class="row">
-            <p>Meme on Bottom</p>
-            <input type="text" name="BMEME" id="bottom-meme">
-        </div>
-        <div class="row">
-            <button class="generator">GENERATE</button>
-        </div>
-        <div class="row" id="holder">
+        <div class="row col-md-8" id="holder">
 
         </div>        
 
