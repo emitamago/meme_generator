@@ -2,6 +2,8 @@
 .text-top{
     position: absolute;
     top: 5%;
+    left: 5%;
+    z-index: 3;
     background-color: red;
     
     
@@ -10,29 +12,34 @@
 .text-bottom{
     position: absolute;
     bottom:  5%;
+    left: 5%;
+    z-index: 3;
+    
     background-color: yellow;
     
 }
 
 .innner-image{
     width:100%;
-    height:100%;
+    height:100%; 
     
-    position: absolute;
+    position: relative;
     padding-right: 10px;
+    z-index: 2;
 }
 
 .delete-button{
     position: absolute;
-    top: 30%;
+    right: 5%;
+    z-index: 3;
     
 }
 .out-box{
     position: relative;
-    width: 500px;
-    height: 500px; 
+    
 }
 
 #holder{
     padding-top: 30px;
+    margin: 0 auto;
 }
