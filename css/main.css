@@ -4,7 +4,11 @@
     top: 5%;
     left: 5%;
     z-index: 3;
-    background-color: red;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 40px;
+    color: antiquewhite;
+    text-shadow: 3px 3px black;
+   
     
     
 }
@@ -14,10 +18,14 @@
     bottom:  5%;
     left: 5%;
     z-index: 3;
-    
-    background-color: yellow;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 40px;
+    color: antiquewhite;
+    text-shadow: 3px 3px black;
     
 }
+
+
 
 .innner-image{
     width:100%;
@@ -30,16 +38,18 @@
 
 .delete-button{
     position: absolute;
-    right: 5%;
+    right: 0;
     z-index: 3;
+
     
 }
 .out-box{
     position: relative;
+    padding-top: 15px;
     
 }
 
 #holder{
     padding-top: 30px;
-    margin: 0 auto;
+    
 }
